@@ -1,0 +1,8 @@
+#your name
+name= input("your name")
+
+#yor age
+age= input("pease your age")
+
+#your surname
+surname=input ("slease your surname")

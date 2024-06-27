@@ -1,0 +1,6 @@
+user_num = int(input("please enter your age"))
+
+if user_num == 18:
+    print("you are grown up")
+else :
+    print("no you are child")

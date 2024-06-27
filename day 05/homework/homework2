@@ -1,0 +1,11 @@
+
+numl1 = input("please enter first number")
+numl2 = input("please enter second number")
+print(int(numl1) +  int(numl2))
+
+print(type(numl1))
+print(type(numl2))
+
+print(numl1 + numl2)
+
+

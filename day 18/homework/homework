@@ -1,0 +1,3 @@
+symbol = "$ % ^ V"
+
+print(symbol[ 2: -1])

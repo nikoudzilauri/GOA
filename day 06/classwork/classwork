@@ -1,0 +1,5 @@
+number1 = int(input("enter first number: "))
+num2ber2= float(input("enter second number: "))
+
+print(type(number1) == type(num2ber2))
+print(type(number1) != type(num2ber2))

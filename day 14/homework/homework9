@@ -1,0 +1,5 @@
+counter = 0
+
+while counter  <  2:
+    print('This is inside loop')
+    counter = counter + 1

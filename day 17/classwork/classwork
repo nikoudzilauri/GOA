@@ -1,0 +1,4 @@
+things = ["thing0", "thing1","thing3"]
+
+
+print(things[::1])

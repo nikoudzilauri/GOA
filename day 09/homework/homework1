@@ -1,0 +1,6 @@
+user_num = int(input("please pay money "))
+
+if user_num < 1000 :
+    print(" you can buy it")
+else :
+    print(" need more money ")
