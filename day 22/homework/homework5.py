@@ -10,9 +10,7 @@ def local_variable_demo():
 # Call the function
 local_variable_demo()
 
-# Accessing global variable outside the function
+
 print("\nOutside the function:")
 print("Global variable:", global_var)
 
-# Trying to access local variable outside the function (will result in an error)
-# print("Local variable outside the function:", local_var)

@@ -1,0 +1,4 @@
+#
+sentence = ("sentence")
+
+print(sentence)
