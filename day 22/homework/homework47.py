@@ -1,4 +1,4 @@
-my_list = [1, 2, 3, 4, 5]
-list_length = len(my_list)
+list = [1, 2, 3, 4, 5]
+length = len(list)
 
-print(list_length)
+print(length)

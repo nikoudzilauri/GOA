@@ -1,3 +1,4 @@
-squared_numbers = [x*x for x in range(1, 6)]
 
-print(squared_numbers)
+for x in range(1, 6):
+
+else print(x)
