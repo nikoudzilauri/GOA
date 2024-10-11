@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cube Creator</title>
+    <style>
+        body { display: flex; flex-direction: column; align-items: center; }
+        .cube { width: 100px; height: 100px; margin: 10px; background-color: #ccc; }
+    </style>
+</head>
+<body>
+    <input type="file" onchange="loadImage(event, this.dataset.index)" data-index="0">
+    <input type="file" onchange="loadImage(event, this.dataset.index)" data-index="1">
+    <input type="file" onchange="loadImage(event, this.dataset.index)" data-index="2">
+    <input type="color" onchange="changeColor(event, this.dataset.index)" data-index="0">
+    <input type="color" onchange="changeColor(event, this.dataset.index)" data-index="1">
+    <input type="color" onchange="changeColor(event, this.dataset.index)" data-index="2">
+    <div id="cubes"></div>
+    <script>
+        function loadImage(event, index) {
+            const cube = document.createElement('div'); cube.className = 'cube'; cube.id = 'cube' + index;
+            const reader = new FileReader(); reader.onload = e => { cube.style.backgroundImage = 'url(' + e.target.result + ')'; cube.style.backgroundSize = 'cover'; }
+            reader.readAsDataURL(event.target.files[0]); document.getElementById('cubes').appendChild(cube);
+        }
+        function changeColor(event, index) { const cube = document.getElementById('cube' + index);
+            if (cube) { cube.style.backgroundColor = event.target.value; cube.style.backgroundImage = 'none'; }
+        }
+    </script>
+</body>
+</html>
